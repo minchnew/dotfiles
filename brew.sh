@@ -24,8 +24,8 @@ brew install findutils
 brew install gnu-sed
 # Install Bash 4.
 # zsh preferred
-# brew install bash
-# brew install bash-completion2
+brew install zsh
+brew install zsh-completions
 
 # Switch to using brew-installed bash as default shell
 # if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
