@@ -1,5 +1,7 @@
 " Plugin 'moll/vim-node'
 " Plugin 'digitaltoad/vim-jade'
 " Plugin 'marijnh/tern_for_vim'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mxw/vim-jsx.git'
+Plugin 'neoclide/coc.nvim'
