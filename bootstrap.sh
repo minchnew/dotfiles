@@ -13,9 +13,7 @@ function doIt() {
     --exclude "README.md" \
     --exclude "LICENSE-MIT.txt" \
     -avh --no-perms . ~;
-  # Install vundle
-  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
-  vim +PluginInstall +qall;
+  vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa"
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
