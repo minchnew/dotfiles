@@ -76,6 +76,11 @@ silent! autocmd VimEnter * RemoveConflictingAlignMaps
 " }
 
 " Plugins {
+    " vim-go {
+          let g:go_def_mode='gopls'
+          let g:go_info_mode='gopls'
+    " }
+
     " Ctags {
       " This will look in the current directory for 'tags', and work up the tree towards root until one is found. 
       set tags=./tags,tags,$HOME/vimtags
@@ -169,8 +174,8 @@ silent! autocmd VimEnter * RemoveConflictingAlignMaps
         inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
         " Use `[c` and `]c` to navigate diagnostics
-        nmap <silent> [c <Plug>(coc-diagnostic-prev)
-        nmap <silent> ]c <Plug>(coc-diagnostic-next)
+        " nmap <silent> [c <Plug>(coc-diagnostic-prev)
+        " nmap <silent> ]c <Plug>(coc-diagnostic-next)
 
         " Remap keys for gotos
         nmap <silent> gd <Plug>(coc-definition)
